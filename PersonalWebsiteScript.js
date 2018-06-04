@@ -21,3 +21,8 @@ function processNumber(num) {
 function isPrime(num) {
 
 }
+
+//Run and Test function
+function run() {
+
+}
