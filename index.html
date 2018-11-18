@@ -49,8 +49,19 @@
       </p>
 
       <form>
-        Please enter a number with greater than 10 digits:<input type="text" name="primeUserInput">
+        Please enter a number with greater than 10 digits:
+        <input id="primeUserInput" type="text">
+        <button id="primeButton" type="button" onclick="findPrime()">Find 10 digit prime</button>
+        <label id="result" for="primeUserInput"></label>
       </form>
+
+      <script src="js/PersonalWebsiteScript.js">
+        function findPrime() {
+          let input = document.getElementById("primeUserInput").value;
+          let output = findTenDigitPrime(input);
+          document.getElementById(result).text = output;
+        }
+      </script>
 
     </div>
 
