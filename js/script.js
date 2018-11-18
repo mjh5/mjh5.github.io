@@ -47,5 +47,5 @@ function findPrime() {
   alert("findPrime was called");
   let input = document.getElementById("primeUserInput").value;
   let output = findTenDigitPrime(input);
-  document.getElementById(primeOutput).innerHTML = output;
+  document.getElementById("primeOutput").innerHTML = output;
 }
