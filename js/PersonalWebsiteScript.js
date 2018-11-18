@@ -1,4 +1,5 @@
 function findTenDigitPrime(numberToSearch) {
+  alert("findTenDigitPrime was called");
   var numberAsString = processNumber(numberToSearch);
   for (var i = 0; i < numberAsString.length - 11; i++) {
     let tenDigits = numberAsString.substring(i, i + 11);
@@ -12,6 +13,7 @@ function findTenDigitPrime(numberToSearch) {
 }
 
 function processNumber(num) {
+  alert("processNumber was called");
   var numberAsString = num.toString();
   var processedNum = num.replace('.', "");
 
@@ -21,6 +23,7 @@ function processNumber(num) {
 //Implementation of the Primality Test
 //https://en.wikipedia.org/wiki/Primality_test#Pseudocode
 function isPrime(num) {
+  alert("isPrime was called")
   if (num <= 1) {
     return false;
   } else if (num <= 3) {
@@ -39,7 +42,10 @@ function isPrime(num) {
   return true;
 }
 
-//Run and Test function
-function run() {
-
+//Run
+function findPrime() {
+  alert("findPrime was called");
+  let input = document.getElementById("primeUserInput").value;
+  let output = findTenDigitPrime(input);
+  document.getElementById(primeOutput).innerHTML = output;
 }
