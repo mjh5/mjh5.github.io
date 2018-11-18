@@ -34,10 +34,8 @@ function isPrime(num) {
     if (n % i == 0 || n % (i+2) == 0) {
       return false;
     }
-
     i = i + 6;
   }
-
   return true;
 }
 
