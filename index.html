@@ -48,18 +48,15 @@
         it exists.
       </p>
 
-      <form>
-        Please enter a number with greater than 10 digits:
-        <input id="primeUserInput" type="text">
-        <button id="primeButton" type="button" onclick="findPrime()">Find 10 digit prime</button>
-        <label id="result" for="primeUserInput"></label>
-      </form>
+      <input type="text" id="primeUserInput"></input>
+
+      <input type="button" id="primeButton" value="Find 10 digit prime!" onclick="findPrime()"></input>
 
       <script src="js/PersonalWebsiteScript.js">
         function findPrime() {
           let input = document.getElementById("primeUserInput").value;
           let output = findTenDigitPrime(input);
-          document.getElementById(result).text = output;
+          document.getElementById(primeUserInput).text = output;
         }
       </script>
 
